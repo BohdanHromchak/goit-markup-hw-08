@@ -1,0 +1,35 @@
+/* header contacts */
+.contacts {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.header__contacts {
+    margin-left: auto;
+}
+
+.contacts__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--secondary-txt-cl);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-cl);
+    }
+}
+
+.contacts__icon {
+    fill: currentColor;
+}

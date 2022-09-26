@@ -1,0 +1,29 @@
+/* Чим ми займаємося */
+.section--no-pudding-top {
+    padding-top: 0;
+}
+
+.activities {
+    display: flex;
+    gap: 30px;
+}
+
+.activities__item {
+    position: relative;
+}
+
+.activities__text {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--white-txt-cl);
+    background-color: var(--activities-bg-cl);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+}
+
