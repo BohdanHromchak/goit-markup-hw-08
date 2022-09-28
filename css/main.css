@@ -486,6 +486,13 @@ img {
   letter-spacing: 0.06em;
   color: var(--white-txt-cl);
 }
+@media screen and (max-width: 1199px) {
+  .hero__title {
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
 
 .hero__button {
   padding: 10px 32px;
@@ -515,20 +522,14 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-}
-@media screen and (max-width: 767px) {
-  .features {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-@media screen and (min-width: 768px) {
-  .features {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .features__title {
@@ -586,6 +587,11 @@ img {
   display: flex;
   gap: 30px;
 }
+@media screen and (max-width: 1199px) {
+  .activities {
+    display: none;
+  }
+}
 
 .activities__item {
   position: relative;
@@ -622,23 +628,14 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-}
-@media screen and (max-width: 767px) {
-  .team {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-@media screen and (min-width: 768px) {
-  .team {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .team__item {
@@ -715,6 +712,14 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .clients__item {

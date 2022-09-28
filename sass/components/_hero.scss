@@ -25,6 +25,13 @@
     line-height: 1.36;
     letter-spacing: 0.06em;
     color: var(--white-txt-cl);
+
+    @media screen and (max-width: 1199px) {
+        width: 360px;
+        font-size: 26px;
+        line-height: 1.62;
+
+    }
 }
 
 .hero__button {
