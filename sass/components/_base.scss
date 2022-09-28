@@ -42,6 +42,9 @@ img {
 
 .section {
     padding: 94px 0;
+    @media screen and (max-width: 1199px) {
+            padding: 60px 0;
+        }
 }
 
 .section__title {
@@ -51,4 +54,10 @@ img {
     line-height: 1.17;
     color: var(--primary-txt-cl);
     margin-bottom: 50px;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 28px;
+        margin-bottom: 30px;
+        
+    }
 }

@@ -83,6 +83,11 @@ img {
 .section {
   padding: 94px 0;
 }
+@media screen and (max-width: 1199px) {
+  .section {
+    padding: 60px 0;
+  }
+}
 
 .section__title {
   text-align: center;
@@ -91,6 +96,12 @@ img {
   line-height: 1.17;
   color: var(--primary-txt-cl);
   margin-bottom: 50px;
+}
+@media screen and (max-width: 1199px) {
+  .section__title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
 }
 
 /* logo */
@@ -611,6 +622,23 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+}
+@media screen and (max-width: 767px) {
+  .team {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .team__item {
