@@ -113,6 +113,12 @@ img {
   line-height: 1.38;
   color: var(--accent-cl);
 }
+@media screen and (max-width: 1199px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
 
 .logo__dark {
   color: var(--black-txt-cl);
@@ -265,6 +271,8 @@ img {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 /* footer contacts */
@@ -374,6 +382,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer-form__caption {
@@ -587,8 +597,9 @@ img {
   display: flex;
   gap: 30px;
 }
+
 @media screen and (max-width: 1199px) {
-  .activities {
+  .section--display-none {
     display: none;
   }
 }
