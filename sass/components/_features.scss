@@ -2,11 +2,19 @@
 .features {
     display: flex;
     gap: 30px;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-wrap: wrap; }
 }
 
 .features__title {
     width: 270px;
-    margin-bottom: 10px;
+    text-align: center;
+    margin: 0 auto 10px;
 
     text-transform: uppercase;
     font-weight: 700;
@@ -27,9 +35,17 @@
 }
 
 .features__desc {
-    width: 270px;
+    width: 450px;
     margin: 0;
 
     line-height: 1.71;
     color: var(--secondary-txt-cl);
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
 }
