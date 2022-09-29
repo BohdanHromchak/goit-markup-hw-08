@@ -68,20 +68,28 @@
             <h1 class="visually-hidden tab__title">Наші роботи</h1>
 
             <ul class="tab__list">
-              <li class="tab__item">
-                <button type="button" class="tab__button">Усі</button>
+              <li>
+                <ul class="tab__wrap-1 tab__wrap-1--mobile-display">
+                  <li class="tab__item">
+                    <button type="button" class="tab__button">Усі</button>
+                  </li>
+                  <li class="tab__item">
+                    <button type="button" class="tab__button">Веб-сайти</button>
+                  </li>
+                  <li class="tab__item">
+                    <button type="button" class="tab__button">Додатки</button>
+                  </li>
+                </ul>
               </li>
-              <li class="tab__item">
-                <button type="button" class="tab__button">Веб-сайти</button>
-              </li>
-              <li class="tab__item">
-                <button type="button" class="tab__button">Додатки</button>
-              </li>
-              <li class="tab__item">
-                <button type="button" class="tab__button">Дизайн</button>
-              </li>
-              <li class="tab__item">
-                <button type="button" class="tab__button">Маркетинг</button>
+              <li>
+                <ul class="tab__wrap-2 tab__wrap-2--mobile-display">
+                  <li class="tab__item">
+                    <button type="button" class="tab__button">Дизайн</button>
+                  </li>
+                  <li class="tab__item">
+                    <button type="button" class="tab__button">Маркетинг</button>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -90,7 +98,25 @@
             <li class="product__item">
               <a href="#" class="product__link">
                 <div class="product__thumb">
-                  <img src="./images/laptop.jpeg" alt="Ноутбук" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/laptop_lg-@1x.jpg 1x, ./images/laptop_lg-@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/laptop_md-@1x.jpg 1x, ./images/laptop_md-@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/laptop_sm-@1x.jpg 1x, ./images/laptop_sm-@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <img src="./images/laptop_md-@1x.jpg" alt="Ноутбук" />
+                  </picture>
+
                   <div class="overlay">
                     <p class="overlay__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -108,7 +134,34 @@
             <li class="product__item">
               <a href="#" class="product__link">
                 <div class="product__thumb">
-                  <img src="./images/basketball-players.jpeg" alt="Баскетболісти" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/basketball-players_md-@1x.jpg 1x,
+                        ./images/basketball-players_lg-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/basketball-players_md-@1x.jpg 1x,
+                        ./images/basketball-players_md-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/basketball-players_sm-@1x.jpg 1x,
+                        ./images/basketball-players_sm-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img src="./images/basketball-players_md-@1x.jpg" alt="Баскетболісти" />
+                  </picture>
+
                   <div class="overlay">
                     <p class="overlay__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -126,7 +179,34 @@
             <li class="product__item">
               <a href="#" class="product__link">
                 <div class="product__thumb">
-                  <img src="./images/restaurant-emblem.jpeg" alt="Емблема ресторану" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/restaurant-emblem_lg-@1x.jpg 1x,
+                        ./images/restaurant-emblem_lg-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/restaurant-emblem_md-@1x.jpg 1x,
+                        ./images/restaurant-emblem_md-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/restaurant-emblem_sm-@1x.jpg 1x,
+                        ./images/restaurant-emblem_sm-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img src="./images/restaurant-emblem_md-@1x.jpg" alt="Емблема ресторану" />
+                  </picture>
+
                   <div class="overlay">
                     <p class="overlay__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -144,7 +224,25 @@
             <li class="product__item">
               <a href="#" class="product__link">
                 <div class="product__thumb">
-                  <img src="./images/headphones.jpeg" alt="Навушники" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/headphones_lg-@1x.jpg 1x, ./images/headphones_lg-@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/headphones_md-@1x.jpg 1x, ./images/headphones_md-@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/headphones_sm-@1x.jpg 1x, ./images/headphones_sm-@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <img src="./images/headphones_md-@1x.jpg" alt="Навушники" />
+                  </picture>
+
                   <div class="overlay">
                     <p class="overlay__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -162,7 +260,25 @@
             <li class="product__item">
               <a href="#" class="product__link">
                 <div class="product__thumb">
-                  <img src="./images/boxes.jpeg" alt="Коробки" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/boxes_lg-@1x.jpg 1x, ./images/boxes_lg-@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/boxes_md-@1x.jpg 1x, ./images/boxes_md-@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/boxes_sm-@1x.jpg 1x, ./images/boxes_sm-@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <img src="./images/boxes_md-@1x.jpg" alt="Коробки" />
+                  </picture>
+
                   <div class="overlay">
                     <p class="overlay__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -180,7 +296,25 @@
             <li class="product__item">
               <a href="#" class="product__link">
                 <div class="product__thumb">
-                  <img src="./images/imac.jpeg" alt="Монітор комп'ютера" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/imac_lg-@1x.jpg 1x, ./images/imac_lg-@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/imac_md-@1x.jpg 1x, ./images/imac_md-@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/imac_sm-@1x.jpg 1x, ./images/imac_sm-@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <img src="./images/imac_md-@1x.jpg" alt="Монітор комп'ютера" />
+                  </picture>
+
                   <div class="overlay">
                     <p class="overlay__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -198,7 +332,25 @@
             <li class="product__item">
               <a href="#" class="product__link">
                 <div class="product__thumb">
-                  <img src="./images/magazine.jpeg" alt="Журнал" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/magazine_lg-@1x.jpg 1x, ./images/magazine_lg-@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/magazine_md-@1x.jpg 1x, ./images/magazine_md-@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/magazine_sm-@1x.jpg 1x, ./images/magazine_sm-@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <img src="./images/magazine_md-@1x.jpg" alt="Журнал" />
+                  </picture>
+
                   <div class="overlay">
                     <p class="overlay__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -216,7 +368,25 @@
             <li class="product__item">
               <a href="#" class="product__link">
                 <div class="product__thumb">
-                  <img src="./images/signboard.jpeg" alt="Вивіска" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/signboard_lg-@1x.jpg 1x, ./images/signboard_lg-@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/signboard_md-@1x.jpg 1x, ./images/signboard_md-@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/signboard_sm-@1x.jpg 1x, ./images/signboard_sm-@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <img src="./images/signboard_md-@1x.jpg" alt="Вивіска" />
+                  </picture>
+
                   <div class="overlay">
                     <p class="overlay__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -234,7 +404,34 @@
             <li class="product__item">
               <a href="#" class="product__link">
                 <div class="product__thumb">
-                  <img src="./images/typing-on-laptop.jpeg" alt="Набір на клавіатурі" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/typing-on-laptop_lg-@1x.jpg 1x,
+                        ./images/typing-on-laptop_lg-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/typing-on-laptop_md-@1x.jpg 1x,
+                        ./images/typing-on-laptop_md-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/typing-on-laptop_sm-@1x.jpg 1x,
+                        ./images/typing-on-laptop_sm-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img src="./images/typing-on-laptop_md-@1x.jpg" alt="Набір на клавіатурі" />
+                  </picture>
+
                   <div class="overlay">
                     <p class="overlay__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.

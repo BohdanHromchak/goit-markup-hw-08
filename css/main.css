@@ -778,14 +778,49 @@ img {
 
 /* portfolio tabs */
 .tab__list {
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .tab__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 8px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tab__list {
+    margin-bottom: 50px;
+  }
+}
+
+.tab__wrap-1--mobile-display {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
   gap: 8px;
+}
+@media screen and (max-width: 767px) {
+  .tab__wrap-1--mobile-display {
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+}
+
+.tab__wrap-2--mobile-display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+}
+@media screen and (max-width: 767px) {
+  .tab__wrap-2--mobile-display {
+    margin-right: auto;
+  }
 }
 
 .tab__button {
