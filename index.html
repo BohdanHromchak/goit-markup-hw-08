@@ -156,7 +156,17 @@
                   srcset="./images/demyanenko_lg-@1x.jpg 1x, ./images/demyanenko_lg-@2x.jpg 2x"
                   type="image/jpg"
                 />
-                <img src="./images/demyanenko_lg-@1x.jpg" alt="Ігор Дем'яненко" />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/demyanenko_md-@1x.jpg 1x, ./images/demyanenko_md-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/demyanenko_sm-@1x.jpg 1x, ./images/demyanenko_sm-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img src="./images/demyanenko_md-@1x.jpg" alt="Ігор Дем'яненко" />
               </picture>
 
               <div class="team__box">
