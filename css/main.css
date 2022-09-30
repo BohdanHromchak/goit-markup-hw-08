@@ -892,6 +892,12 @@ img {
   gap: 30px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .product__item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
 .product__desc {
   padding: 20px 24px;
   border: 1px solid var(--border-cl);
@@ -1263,7 +1269,7 @@ img {
           flex-direction: column;
   width: 100%;
   height: 100%;
-  padding: 40px 48px;
+  padding: 48px 40px;
   background-color: var(--white-txt-cl);
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -1304,4 +1310,28 @@ img {
   margin-left: auto;
   top: 10px;
   right: 15px;
+  color: var(--primary-txt-cl);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-toggle:hover, .menu-toggle:focus {
+  color: var(--accent-cl);
+  border-color: var(--accent-cl);
+}
+
+.menu-toggle__icon {
+  fill: currentColor;
+}
+
+.mobile-menu__link {
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--primary-txt-cl);
 }/*# sourceMappingURL=main.css.map */
