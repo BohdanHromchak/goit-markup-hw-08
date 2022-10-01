@@ -19,9 +19,10 @@
 
 .logo--header-indent {
     margin-right: 88px;
-        @media screen and (min-width: 1200px) {
-            margin-right: 93px;
-            }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+    }
 }
 
 .logo__light {
@@ -32,4 +33,10 @@
     margin-right: 0;
     display: block;
     margin-bottom: 20px;
+
+
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
 }

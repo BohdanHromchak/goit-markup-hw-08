@@ -2,19 +2,20 @@
 .product {
     display: flex;
     flex-wrap: wrap;
- 
+
     gap: 30px;
 
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-.product__item {
+    .product__item {
         flex-basis: calc((100% - 30px) / 2);
     }
-        .product__desc--height {
-            height: 148.08px;
-        }
+
+    .product__desc--height {
+        height: 148.08px;
     }
+}
 
 
 

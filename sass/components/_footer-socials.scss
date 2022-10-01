@@ -2,6 +2,12 @@
 
 .footer-socials--indent {
     margin-right: 93px;
+
+    @media screen and (max-width: 767px) {
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+
 }
 
 .footer-socials__caption {
@@ -9,6 +15,10 @@
     color: var(--white-txt-cl);
     line-height: 1.14;
     font-weight: 700;
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
 }
 
 .footer-socials__caption--indent {
