@@ -125,7 +125,12 @@ img {
 }
 
 .logo--header-indent {
-  margin-right: 93px;
+  margin-right: 88px;
+}
+@media screen and (min-width: 1200px) {
+  .logo--header-indent {
+    margin-right: 93px;
+  }
 }
 
 .logo__light {
@@ -167,6 +172,16 @@ img {
 }
 
 /* header nav */
+@media screen and (min-width: 768px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .site-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -237,6 +252,18 @@ img {
 @media screen and (max-width: 767px) {
   .header__contacts {
     display: none;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .header__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
   }
 }
 

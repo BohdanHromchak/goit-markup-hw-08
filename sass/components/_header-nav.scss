@@ -3,6 +3,12 @@
 //     display: flex;
 //     align-items: center;
 // }
+@media screen and (min-width: 768px) {
+    .nav {
+        display: flex;
+    align-items: center;
+    }
+}
 
 .site-nav {
     display: flex;
