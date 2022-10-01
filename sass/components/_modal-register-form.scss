@@ -4,10 +4,14 @@
     width: 448px;
     font-size: 20px;
     letter-spacing: 0.03em;
-    line-height: 1.15;
+    line-height: 1.17;
     text-align: center;
     color: var(--primary-txt-cl);
     margin-bottom: 12px;
+
+    @media screen and (max-width: 1199px) {
+        width: 370px;
+    line-height: 1.5;}
 }
 
 .register-form__wrap--indent {
@@ -130,6 +134,8 @@
     line-height: 1.71;
     user-select: none;
     color: var(--secondary-txt-cl);
+
+
 }
 
 .agreement__link {
@@ -137,7 +143,9 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--accent-cl);
-}
+
+    @media screen and (max-width: 1199px) {
+line-height: 1.17;}}
 
 .agreement__icon-checked {
     opacity: 0;

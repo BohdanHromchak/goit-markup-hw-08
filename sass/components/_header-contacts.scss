@@ -1,7 +1,6 @@
 /* header contacts */
 .contacts {
     display: flex;
-    align-items: center;
     gap: 50px;
 }
 
@@ -12,11 +11,17 @@
         display: none;
     }
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 768px) {
         display: flex;
+
         flex-direction: column;
         gap: 10px;
 
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        gap: 30px;
     }
 }
 
