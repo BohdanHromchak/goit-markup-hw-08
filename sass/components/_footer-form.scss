@@ -38,9 +38,10 @@
         text-align: center;
 
     }
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
-            text-align: center;
-        }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        text-align: center;
+    }
 }
 
 .footer-form__caption--indent {
@@ -64,12 +65,14 @@
         font-size: 16px;
         color: var(--placeholder-footer-cl);
     }
-         @media screen and (min-width: 768px) {
-             width: 450px;
-         }
- @media screen and (min-width: 1200px) {
-    width: 358px;
- }
+
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    }
 
 
 }

@@ -1344,13 +1344,19 @@ img {
 }
 
 .agreement__desc {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.71;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   color: var(--secondary-txt-cl);
+}
+@media screen and (max-width: 1199px) {
+  .agreement__desc {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .agreement__link {
@@ -1361,6 +1367,7 @@ img {
 }
 @media screen and (max-width: 1199px) {
   .agreement__link {
+    font-size: 12px;
     line-height: 1.17;
   }
 }
