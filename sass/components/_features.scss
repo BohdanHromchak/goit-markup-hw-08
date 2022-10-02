@@ -7,8 +7,6 @@
 }
 
 .features__title {
-    width: 270px;
-    text-align: center;
     margin: 0 auto 10px;
 
     text-transform: uppercase;
@@ -16,6 +14,10 @@
     font-size: 14px;
     line-height: 1.17;
     color: var(--primary-txt-cl);
+
+    @media screen and (max-width: 767px) {
+    text-align: center;
+    }
 }
 
 .features__icon-box {
@@ -30,7 +32,7 @@
 }
 
 .features__desc {
-    width: 450px;
+    width: 100%;
     margin: 0;
 
     line-height: 1.71;

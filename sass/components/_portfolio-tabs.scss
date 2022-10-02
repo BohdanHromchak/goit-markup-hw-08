@@ -1,5 +1,8 @@
 /* portfolio tabs */
 .tab__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 8px;
     margin-bottom: 40px;
 
     @media screen and (min-width: 768px) {
@@ -14,25 +17,6 @@
     }
 }
 
-.tab__wrap-1--mobile-display {
-    display: flex;
-    gap: 8px;
-
-    @media screen and (max-width: 767px) {
-        margin-right: auto;
-        margin-bottom: 15px;
-    }
-}
-
-.tab__wrap-2--mobile-display {
-    display: flex;
-
-    gap: 8px;
-
-    @media screen and (max-width: 767px) {
-        margin-right: auto;
-    }
-}
 
 
 .tab__button {
