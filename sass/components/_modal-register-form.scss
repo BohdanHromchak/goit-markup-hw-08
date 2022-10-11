@@ -9,9 +9,15 @@
     color: var(--primary-txt-cl);
     margin-bottom: 12px;
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
         width: 370px;
-    line-height: 1.5;}
+        line-height: 1.5;
+    }
+
+    @media screen and (max-width: 479px)  {
+        width: 100%;
+        line-height: 1.5;
+    }
 }
 
 .register-form__wrap--indent {
